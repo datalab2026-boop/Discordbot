@@ -136,7 +136,6 @@ if __name__ == "__main__":
         bot.run(token)
     else:
         print("ОШИБКА: Токен DISCORD_TOKEN не найден в настройках!")
-        members it after a restart
     async with bot.db_pool.acquire() as conn:
         await conn.execute('''
             UPDATE server_levels 
