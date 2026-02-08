@@ -137,7 +137,7 @@ if __name__ == "__main__":
     else:
         print("ОШИБКА: Токен DISCORD_TOKEN не найден в настройках!")
         def load_data():
-    if os.path.exists(DATA_FILE):
+            if os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
